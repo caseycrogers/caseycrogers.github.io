@@ -17,6 +17,10 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--Fancy Box Stuff-->
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+        <link rel="stylesheet" type="text/css" href="assets/js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 	</head>
 	<body>
 
@@ -98,7 +102,12 @@
 						<div class="row">
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/meshMaker00.jpg" alt="" /></a>
+									<a href="images/meshMaker00.jpg" rel="meshMaker" class="fancybox image featured"><img src="images/meshMaker00-small.jpg" alt="" /></a>
+									<div id="meshMakerInline" style="width:500px;height:500px;overflow:auto;display:none;">
+										<p>asdfasdfasdfasdfasdfasdfasdfasdfasdfasdf</p>
+										<img src="images/meshMaker00.jpg" style="display:none">
+									</div>
+									<a href="images/meshMaker01.jpg" rel="meshMaker" class="fancybox" style="display:none">test</a>
 									<h3><a href="#">Mesh Maker</a></h3>
 									<p>Triangulated scultupre generator</p>
 								</article>
@@ -228,7 +237,6 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/skel-viewport.min.js"></script>
@@ -236,5 +244,15 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
+			<!-- Fancybox Script -->
+			<script type = "text/javascript">
+				$(document).ready(function() {
+    				$(".fancybox").fancybox({
+                		'titlePosition'     : 'inside',
+                		'transitionIn'      : 'none',
+                		'transitionOut'     : 'none'
+    				});
+				});
+			</script>
 	</body>
 </html>
