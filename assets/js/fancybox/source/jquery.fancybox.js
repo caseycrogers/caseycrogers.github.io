@@ -71,7 +71,7 @@
 			autoResize  : true,
 			autoCenter  : !isTouch,
 			fitToView   : true,
-			aspectRatio : false,
+			aspectRatio : true,
 			topRatio    : 0.5,
 			leftRatio   : 0.5,
 
@@ -79,7 +79,7 @@
 			wrapCSS   : '',
 
 			arrows     : true,
-			closeBtn   : true,
+			closeBtn   : false,
 			closeClick : false,
 			nextClick  : false,
 			mouseWheel : true,

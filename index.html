@@ -102,12 +102,17 @@
 						<div class="row">
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
-									<a href="images/meshMaker00.jpg" rel="meshMaker" class="fancybox image featured"><img src="images/meshMaker00-small.jpg" alt="" /></a>
+									<a href="#meshMakerInline" rel="meshMaker" class="fancybox image featured"><img src="images/meshMaker00-small.jpg" alt="" /></a>
 									<div id="meshMakerInline" style="width:500px;height:500px;overflow:auto;display:none;">
-										<p>asdfasdfasdfasdfasdfasdfasdfasdfasdfasdf</p>
-										<img src="images/meshMaker00.jpg" style="display:none">
+										<h3>Mesh Maker</h3><p><img src="images/meshMaker00.jpg" style="display:none">
+										Mesh Maker is a ~800 line Python add-in I wrote for Autodesk Fusion360. It takes in triangulated 3D objects as .stl files and converts them into a series of small interlocking and 3D printable triangles exported as a series of .stl files. Binary bit patterns embedded into the triangles guides the user through assembly.<p>
+
+										Mesh Maker takes large complex objects with structures challenging to 3D printing and makes them easily printable on a consumer grade FDM machine. The result is both artistic and and funtional for rapid prototyping.</p>
 									</div>
+									<a href="images/meshMaker00.jpg" rel="meshMaker" class="fancybox" style="display:none">test</a>
 									<a href="images/meshMaker01.jpg" rel="meshMaker" class="fancybox" style="display:none">test</a>
+									<a href="images/meshMaker02.jpg" rel="meshMaker" class="fancybox" style="display:none">test</a>
+									<a href="images/meshMaker03.jpg" rel="meshMaker" class="fancybox" style="display:none">test</a>
 									<h3><a href="#">Mesh Maker</a></h3>
 									<p>Triangulated scultupre generator</p>
 								</article>
@@ -250,7 +255,8 @@
     				$(".fancybox").fancybox({
                 		'titlePosition'     : 'inside',
                 		'transitionIn'      : 'none',
-                		'transitionOut'     : 'none'
+                		'transitionOut'     : 'none',
+                		'loop'				: false
     				});
 				});
 			</script>
