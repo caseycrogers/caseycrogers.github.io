@@ -66,7 +66,7 @@
 								<section class="box style1">
 									<span class="icon featured fa-code"></span>
 									<h3>Computer Science</h3>
-									<p>From Android apps to 3D printable sculpture generators, I am prepared for any programming challenge!</p>
+									<p>From Android programming to generative design, I am prepared for any programming challenge!</p>
 								</section>
 							</div>
 							<div class="4u 12u(mobile)">
@@ -125,7 +125,7 @@
 									<div id="yourFaultInline" style="width:500px;height:500px;overflow:no;display:none;">
 										<h3>YourFault</h3>
 										<a href="https://www.hackster.io/caseycrogers/yourfault-app-casey-rogers-00fc42" target="_blank">Hackster Page</a><p>
-										YourFault is an Android Wear and Mobile app that I designed for the "User Interfaces" course at UC Berkeley. The app was designed in Android Studio to match a project specification.<p>
+										YourFault is an Android Wear and Mobile app that I designed for the UC Berkeley "User Interfaces" course. The app was designed in Android Studio to match a project specification.<p>
 
 										YourFault's mobile application uses the USGS API to push a notification screen to the Android Wear app when USGS detects an earthquake. The notification displays the earthquake location, magnitude and distance from the user. Tapping on the notification opens, on the mobile app, a Google maps view with a circle representing the mangitude and epicenter of the earthquake.</p>
 
@@ -139,13 +139,42 @@
 							</div>
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Lorem ipsum</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
+									<a href="#pointCloudInline" rel="pointCloud" class="fancybox image featured"><img src="images/pointCloud00-small.jpg" alt="" /></a>
+									<div id="pointCloudInline" style="width:500px;height:500px;overflow:no;display:none;">
+										<h3>Graph Sculpture Optimizer</h3>
+										<a href="https://github.com/caseycrogers/SculptureOptimizer" target="_blank">Github Repository</a><p>
+										I made this sculpture optimizer generator with Luís Dos Santos for the UC Berkeley course "Computational Design and Fabrication". The Python program includes code written by the course staff that generates a graph in 3D space.<p>
+
+										Luís and I wrote code that takes in the graph and, using a Python library called Digifab, produces a series of 3D printable joints and assembly instructions for building the sculpture. I individually wrote (excluding two helper functions) a hill climbing algorithm that manipulates the 3D graph to maximize the smallest angle between two edges in each joint of the sculpture.
+										</p>
+
+									</div>
+									<a href="images/pointCloud00.jpg" rel="pointCloud" class="fancybox" style="display:none" title = "Two manufactured sculptures, the left before optimization and the right after">test</a>
+									<h3><a href="#pointCloudInline" class="fancybox">Sculpture Optimizer</a></h3>
+									<p>Graph sculpture optimizer</p>
 								</article>
 							</div>
 						</div>
 						<div class="row">
+							<div class="4u 12u(mobile)">
+								<article class="box style2">
+									<a href="#dogboneInline" rel="dogbone" class="fancybox image featured"><img src="images/dogbone00-small.jpg" alt="" /></a>
+									<div id="dogboneInline" style="width:500px;height:500px;overflow:no;display:none;">
+										<h3>Dogbone Generator</h3>
+										<a href="hhttps://github.com/caseycrogers/Dogbone.git" target="_blank">Github Repository</a><p>
+										Dogbone is a Python add-in I wrote for Autodesk's Fusion 360. Dogbone fillets are a type of fillet used commonly for CNC milling wood joints. The add-in adds a "Dogbone" tool to the Fusion 360 interface. The tool takes in a corner and generates a Dogbone Fillet specific to the user-specified CNC mill parameters on that corner.<p>
+
+										A Github user named Patrick Rainsberry patched an image resource issue and extended the Dogbone Fillet tool to automatically identify corners to fillet. I patched some reliability issues identified by Patrick and incorporated his changes.
+										</p>
+
+									</div>
+									<a href="images/dogbone00.jpg" rel="dogbone" class="fancybox" style="display:none" title = "A rectangular hole with and without dogbone fillets">test</a>
+									<a href="images/dogbone01.jpg" rel="dogbone" class="fancybox" style="display:none" title = "The Dogbone tool's input UI with eight corners selected">test</a>
+									<a href="images/dogbone02.jpg" rel="dogbone" class="fancybox" style="display:none" title = "A stool designed for CNC milling using Dogbone fillets">test</a>
+									<h3><a href="#dogboneInline" class="fancybox">Dogbone Generator</a></h3>
+									<p>Add-In For Generating Dogbone Fillets</p>
+								</article>
+							</div>
 							<div class="4u 12u(mobile)">
 								<article class="box style2">
 									<a href="#engineInline" rel="engine" class="fancybox image featured"><img src="images/engine00-small.jpg" alt="" /></a>
@@ -191,13 +220,6 @@
 									<a href="images/designathon03.jpg" rel="designathon" class="fancybox" style="display:none" title = "The winning teams, including runner-ups and popular choice">test</a>
 									<h3><a href="#designathonInline" class="fancybox">3D Printing Designathon</a></h3>
 									<p>UC Berkeley 3D Printing Competition</p>
-								</article>
-							</div>
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-									<h3><a href="#">Sed amet ornare</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
 								</article>
 							</div>
 						</div>
